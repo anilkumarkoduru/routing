@@ -1,0 +1,129 @@
+<!-- <ngx-datepicker [(ngModel)]="model"></ngx-datepicker> -->
+<section class="container-fluid">
+  <div class="row">
+    
+    <div class="col-md-3">
+       <p> StartDate:</p> 
+       <ng-datepicker [(ngModel)]= "startdate" [options]= "options"></ng-datepicker>
+    </div>
+    <div class="col-md-3">
+        EndDate:<ng-datepicker [(ngModel)]="Enddate" [options]="options"></ng-datepicker>
+    </div>
+    <div class="col-md-6">
+      <select>
+        <option value="1">
+          hai
+        </option>
+        <option value="2">
+          helo
+        </option>
+        <option value="3">
+          namaste
+        </option>
+      </select>
+      <span><button (click)="onSubmit()" type="submit" class="btn btn-primary ml-5">Submit</button></span>
+   </div>
+    
+  </div>
+</section>
+<br>
+<br>
+<section *ngIf="showTable">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Foo</td>
+      <td>Bar</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Someone</td>
+      <td>Youknow</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Iamout</td>
+      <td>Ofinspiration</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Yoda</td>
+      <td>Skywalker</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Patrick</td>
+      <td>Dupont</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Barack</td>
+      <td>Obama</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>François</td>
+      <td>Holland</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Michel</td>
+      <td>Popo</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Chuck</td>
+      <td>Norris</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Simon</td>
+      <td>Robin</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Louis</td>
+      <td>Lin</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Zelda</td>
+      <td>Link</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section *ngIf="showTable">
+
+  <table class="table table-bordered w3-table w3-striped w3-bordered">
+    <thead>
+      <tr>
+        <th>itemName</th>
+        <th>itemDescription</th>
+        <th>itemPrice</th>
+        <th>itemWithDiscount</th>
+        <th>rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of multiplrorderjson?.multipleOrderList">
+        <td>{{data.itemName}}</td>
+        <td>{{data.itemDescription}}</td>
+        <td>{{data.itemPrice}}</td>
+        <td>{{data.itemWithDiscount}}</td>
+        <td>{{data.rating}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</section>

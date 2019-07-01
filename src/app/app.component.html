@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-md bg-lite Navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-5">
+      <li class="nav-item ml-5 mr-5">
+        <a class="nav-link" href="#">Routing</a>
+      </li>
+      <li class="nav-item ml-5 mr-5">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item ml-5 mr-5">
+        <a class="nav-link" routerLink="/singleorder" routerLinkActive="active">Singleorder</a>
+      </li>
+      <li class="nav-item ml-5 mr-5">
+        <a class="nav-link" routerLink="/multiorder">Multipleorder</a>
+      </li> 
+      <li class="nav-item ml-5 mr-5 ">
+        <a class="nav-link" href="#">Reports</a>
+      </li> 
+
+      <li class="nav-item dropdown  ml-5 mr-5 mt-2 ">
+          <select>
+            <option value="1">login</option>
+            <option value="2">logout</option>
+            <option value="3">signup</option>
+          </select>        
+       </li>
+
+    </ul>
+  </div>  
+</nav>
+<br>
+
+
+
+<router-outlet></router-outlet>

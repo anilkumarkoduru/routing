@@ -1,0 +1,42 @@
+
+
+
+{
+	"multipleOrderList": [{
+			"itemName": "Mobile Phone",
+			"itemDescription": "Samsung J7",
+			"itemPrice": "Rs30000",
+			"itemWithDiscount": "20% Discount",
+			"rating": "3.5 Rating"
+		},
+		{
+			"itemName": "Laptop",
+			"itemDescription": "Lenovo 12",
+			"itemPrice": "Rs 75000",
+			"itemWithDiscount": "10% Discount",
+			"rating": "4 Rating"
+		},
+		{
+			"itemName": "iPad",
+			"itemDescription": "Ipad 06zz Series",
+			"itemPrice": "100000",
+			"itemWithDiscount": "5% Discount",
+			"rating": "4.5 Rating"
+		},
+		{
+			"itemName": "Television",
+			"itemDescription": "Micromax 50 inch HD",
+			"itemPrice": "50000",
+			"itemWithDiscount": "10% Discount",
+			"rating": "4 Rating"
+		},
+		{
+			"itemName": "Bluetooth Speaker ",
+			"itemDescription": "Mi MDZ-28 Speaker",
+			"itemPrice": "Rs 1000",
+			"itemWithDiscount": "10% Discount",
+			"rating": "4.3 Rating"
+		}
+	]
+}
+

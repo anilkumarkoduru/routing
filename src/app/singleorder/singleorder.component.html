@@ -1,0 +1,153 @@
+
+
+<section>
+  <form class="form-inline" action="#">
+  
+    <label class="ml-5 mr-5">Order Summary</label>
+    <input type="text" class="form-control" id="name"
+       required
+       [(ngModel)]="oneway.Lastname" name="name">{{oneway.Lastname}}
+    <button (click)="onSubmit()" type="submit" class="btn btn-primary ml-5">Submit</button>
+  </form>
+  </section>
+  
+  <section class="table mt-5" *ngIf="showTable" >
+    <h4 class="ml-5"><B>Order StatusLog</B></h4>
+  
+      <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>{{oneway.Firstname}}</th>
+                <th>{{oneway.Lastname}}</th>
+                <th>{{oneway.address.street}}</th>
+                <th>{{oneway.address.phno}}</th>
+                <th>{{oneway.address.city}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{singleOrderjson?.orderList.orderDetails.productNumber}}</td>
+                <td>{{singleOrderjson?.orderList.orderDetails.productName}}</td>
+                <td>{{singleOrderjson?.orderList.orderDetails.productDescription}}</td>
+                <td>{{singleOrderjson?.orderList.orderDetails.productPrice}}</td>
+                <td>{{singleOrderjson?.orderList.orderDetails.productDescription}}</td>
+              </tr>
+              <tr>
+                  <td>{{singleOrderjson?.orderList.orderDetails.productNumber}}</td>
+                  <td>{{singleOrderjson?.orderList.orderDetails.productName}}</td>
+                  <td>{{singleOrderjson?.orderList.orderDetails.productDescription}}</td>
+                  <td>{{singleOrderjson?.orderList.orderDetails.productPrice}}</td>
+                  <td>{{singleOrderjson?.orderList.orderDetails.productDescription}}</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Name3</td>
+                  <td>Order3</td>
+                  <td>Address3</td>
+                  <td>dd/mm/year</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Name4</td>
+                  <td>Order4</td>
+                  <td>Address4</td>
+                  <td>dd/mm/year4</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Name5</td>
+                  <td>Order5</td>
+                  <td>Address5</td>
+                  <td>dd/mm/year</td>
+              </tr>
+            </tbody>
+          </table>
+  
+  </section> 
+
+  <section class="table mt-5"  *ngIf="showTable">
+    <h4 class="ml-5"><B>Order StatusLog</B></h4>
+  
+      <table datatable class="table table-striped">
+            <thead>
+              <tr>
+                <th>{{oneway.Firstname}}</th>
+                <th>{{oneway.Lastname}}</th>
+                <th>{{oneway.address.street}}</th>
+                <th>{{oneway.address.phno}}</th>
+                <th>{{oneway.address.city}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                  <td>Name1</td>
+                  <td>Order1</td>
+                  <td>Address1</td>
+                  <td>dd/mm/year</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Name2</td>
+                  <td>Order2</td>
+                  <td>Address2</td>
+                  <td>dd/mm/year</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Name3</td>
+                  <td>Order3</td>
+                  <td>Address3</td>
+                  <td>dd/mm/year</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Name4</td>
+                  <td>Order4</td>
+                  <td>Address4</td>
+                  <td>dd/mm/year4</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Name5</td>
+                  <td>Order5</td>
+                  <td>Address5</td>
+                  <td>dd/mm/year</td>
+              </tr>
+            </tbody>
+          </table>
+  
+  </section>
+
+  <section class="mt-5" *ngIf="showTable">
+
+<table class="table table-bordered w3-table w3-striped w3-bordered">
+<tr>
+    <th>Sno</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Status</th>
+    <th>Description</th>
+</tr>
+
+<tr *ngFor="let data of singleorderjson?.orderLog">
+
+<td>{{data.sNo}}</td>
+<td>{{data.time}}</td>
+<td>{{data.date}}</td>
+<td>{{data.status}}</td>
+<td>{{data.description}}</td>
+</tr>
+
+
+</table>
+
+  </section>
+ 
+  <section class="mt-5">
+  <button type="button" class="btn btn-primary" routerLink="/singleorder" routerLinkActive="active">1st order</button> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" class="btn btn-secondary" routerLink="/multiorder" routerLinkActive="active">2nd order</button>
+  </section>
+
+  
